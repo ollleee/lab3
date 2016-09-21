@@ -1,18 +1,24 @@
 #include "Person.h"
 #include "PersonReg.h"
-#include <iostream>
 
 int main()
 {
-	Person* pers = new Person("Olle", "Korsv.17");
-	Person* pers1 = new Person("Peter", "lelgatan");
-	//pers->print();
-	PersonReg* reg = new PersonReg(5);
+	PersonReg* reg = new PersonReg(6);
+	Person* pers = new Person("Olle", "gatan");
+	Person* pers1 = new Person("Peter", "vagen");
+	Person* pers2 = new Person("Dennis", "Sjobo");
+
 	reg->addPerson(pers);
 	reg->addPerson(pers1);
+	reg->addPerson(pers2);
 	reg->print();
-	//reg->delPerson(pers);
-	std::cout << reg->search("Olle", nullptr)->name;
-	
+	//reg->delPerson(pers1);
+	//reg->print();
+	//std::cout << reg->search("Olle", nullptr)->name;
+
 	system("pause");
+	delete reg;
+	delete pers;
+	delete pers1;
+	delete pers2;
 }
