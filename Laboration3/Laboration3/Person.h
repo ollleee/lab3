@@ -4,12 +4,13 @@ class Person
 {
 public:
 	std::string name;
-	std::string address;
+	std::string address;  
 
 	Person() = default;
 	Person(std::string name, std::string address);
-	~Person();
+	virtual ~Person();
 
-	void print();
-
+	virtual void print();
+	
 };
+

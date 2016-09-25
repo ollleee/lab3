@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PersonMedTel.cpp" />
     <ClCompile Include="PersonReg.cpp" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person.h" />
+    <ClInclude Include="PersonMedTel.h" />
     <ClInclude Include="PersonReg.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
