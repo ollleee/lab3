@@ -52,43 +52,8 @@ void PersonReg::delPerson(Person * person)
 }
 
 Person * PersonReg::search(std::string name, Person* last)
-{
-	return 0;
-}
-}
-
-void PersonReg::print()
-{
-	for (int i = 0; i < maxSize; i++) {
-		if (personer[i] != nullptr) {
-			std::cout << personer[i]->name << ", " << personer[i]->address << std::endl;
-		}
-	}
-}
-
-
-void PersonReg::delPerson(Person * person)
-{
-	for (int i = 0; i < maxSize; i++) {
-		if (personer[i] == person) {
-			personer[i] = nullptr;
-		}
-	}
-}
-
-Person * PersonReg::search(std::string name, Person* last)
 {	
-	Person* person;
-	for (int i = 0; i < maxSize; i++) {
-		if (personer[i]->name == name) {
-			person = personer[i];
-			return person;
-		}
-		
-	}
-
 	return 0;
-
 }
 
 
